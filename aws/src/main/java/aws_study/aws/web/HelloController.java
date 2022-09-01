@@ -15,10 +15,10 @@ public class HelloController {
             log.info("/aws/v1 호출 INFO 로그");
         }
         else if (number == -1) {
-            log.info("/aws/v1 호출 ERROR 로그");
+            log.error("/aws/v1 호출 ERROR 로그");
         }
         else {
-            log.info("/aws/v1 호출 WARN 로그");
+            log.warn("/aws/v1 호출 WARN 로그");
         }
 
         return "<h1>aws v1</h1>";
