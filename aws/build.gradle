@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'aws_study'
-version = '0.0.1-SNAPSHOT'
+version = '0.0.1'
 sourceCompatibility = '11'
 
 configurations {
@@ -30,11 +30,6 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
-/*
-bootJar {
+jar {
 	enabled = false
 }
-
-jar {
-	enabled = true
-}*/
