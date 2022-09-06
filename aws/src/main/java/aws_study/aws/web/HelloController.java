@@ -11,7 +11,7 @@ public class HelloController {
 
     @GetMapping("/")
     public String home() {
-        return "<h1>home page</h1>"
+        return "<h1>home page</h1>";
     }
 
 
