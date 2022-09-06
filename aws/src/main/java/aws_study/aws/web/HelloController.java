@@ -9,6 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
+    @GetMapping("/")
+    public String home() {
+        return "<h1>home page</h1>"
+    }
+
+
     @GetMapping("/aws/v1")
     public String hello(@RequestParam(defaultValue = "1") Integer number) {
         if (number == 1) {
